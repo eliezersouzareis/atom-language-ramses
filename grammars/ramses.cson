@@ -6,8 +6,7 @@
 
 "patterns": [
     {
-        "match":
-        "(?i)\\b(STR|LDR|ADD|OR|AND|NOT|SUB|JMP|JN|JZ|JC|JSR|NEG|SHR|HLT)"
+        "match": "(?i)\\b(STR|LDR|ADD|OR|AND|NOT|SUB|JMP|JN|JZ|JC|JSR|NEG|SHR|HLT)"
         "name": "keyword.mnemonic"
     }
     {
