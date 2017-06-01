@@ -1,0 +1,21 @@
+"filetypes": [
+    "rad"
+],
+
+"name": "Ramses",
+
+"patterns": [
+    {
+        "match":
+        "(?i)\\b(STR|LDR|ADD|OR|AND|NOT|SUB|JMP|JN|JZ|JC|JSR|NEG|SHR|HLT)"
+        "name": "keyword.mnemonic"
+    }
+    {
+        "match": "(?i)\\b([ABX])"
+        "name": "variable.register"
+    }
+    {
+        "match": "\\b([\#][0-9_])"
+        "name": "constant.numeric"
+    }
+]

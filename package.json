@@ -1,0 +1,11 @@
+{
+    "name": "language-ramses",
+    "version": "0.1",
+    "description": "Ramses Language Support for Atom",
+    "repository": "",
+    "license": "MIT",
+    "engines": {
+        "atom": ">0.50.0"
+    },
+    "dependencies": {}
+}
