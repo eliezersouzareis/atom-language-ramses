@@ -1,6 +1,6 @@
 {
   "name": "language-ramses",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ramses Hipothetic Machine Language Support for Atom",
   "repository": "https://github.com/eliezersouzareis/atom-language-ramses",
   "license": "MIT",
