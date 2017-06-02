@@ -3,18 +3,35 @@
 ]
 
 "name": "Ramses"
+"scopeName": "source.ramses"
 
 "patterns": [
     {
-        "match": "(?i)\\b(STR|LDR|ADD|OR|AND|NOT|SUB|JMP|JN|JZ|JC|JSR|NEG|SHR|HLT)"
-        "name": "keyword.mnemonic"
+        "match": ";.*$"
+        "name": "comment.line"
     }
     {
-        "match": "(?i)\\b([ABX])"
+        "match": "^\\s*([A-Za-z\\$\\._\\?][0-9A-Za-z_\\$\\#@~\\.\\?]*)\\s*:"
+        "name": "entity.name.function.label"
+    }
+    {
+        "match": "(?i)\\b(STR|LDR|ADD|OR|AND|NOT|SUB|NEG|SHR|HLT)"
+        "name": "keyword.operator"
+    }
+    {
+        "match": "(?i)\\b(JMP|JN|JZ|JC|JSR)"
+        "name": "keyword.control"
+    }
+    {
+        "match": "(?i)\\b(\s[ABX]\s)"
         "name": "variable.register"
     }
     {
-        "match": "\\b([\#][0-9_])"
+        "match": "(#[0-9]+)"
         "name": "constant.numeric"
+    }
+    {
+        "match": "([0-9]+)"
+        "name": "storage"
     }
 ]
