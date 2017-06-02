@@ -1,9 +1,9 @@
-"filetypes": [
+"fileTypes": [
     "rad"
 ]
 
 "name": "Ramses"
-"scopeName": "source.ramses"
+"scopeName": "source.text"
 
 "patterns": [
     {
@@ -15,7 +15,11 @@
         "name": "entity.name.function.label"
     }
     {
-        "match": "(?i)\\b(STR|LDR|ADD|OR|AND|NOT|SUB|NEG|SHR|HLT)"
+        "match": "(?i)\\b(STR|LDR|HLT)"
+        "name": "keyword.mnemonic"
+    }
+    {
+        "match": "(?i)\\b(ADD|OR|AND|NOT|SUB|NEG|SHR)"
         "name": "keyword.operator"
     }
     {
